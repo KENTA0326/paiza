@@ -6,11 +6,11 @@ count = 0
 answer = []
 (0...n).each do |i|
     (i+1...n).each do |j|
-        if a[i][j] > 1
-            count += 1
-            answer << [i+1, j+1]
-        end 
+    if a[i][j] + a[j][i] > 1
+        count += 1
+        answer << [i+1, j+1]
     end 
+end 
 end 
 
 puts count 
