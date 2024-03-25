@@ -5,7 +5,6 @@ m.times{|i| a[i] = gets.split.map(&:to_i)}
 
 b = Array.new(n, 0)
 
-
 n.times do |i|
     a.each do |j|
         c, d = j
