@@ -27,6 +27,7 @@ end
   mid_count += 1 if indegree[c] == outdegree[c]
 end
 
+
 if start_count == 0 && goal_count == 0 && mid_count == 26
   puts 1
 elsif start_count == 1 && goal_count == 1 && mid_count == 24
